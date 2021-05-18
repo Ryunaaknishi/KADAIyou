@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf=8">
+    <meta name="viewport" content="width=dvice-width,initial-scale=1.0">
+    <meta http-equiv="x-UA-Compatible" content="ie=edge">
+    <title>自己紹介サイト</title>
+    <style type="text/css">
+        html {
+            scroll-behavior: smooth;
+            background-color: palegoldenrod;
+            
+        }
+        nav {
+            background-color: white;
+            scroll-behavior: smooth;
+            
+        }
+        div.header {
+            background-color: teal;
+            color: #f1f1f1;
+            height: 140px;
+            
+        }
+        h1 {
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+            padding: 10px;
+            
+        }
+        li {
+            font-size: 30px;
+        }
+        div.photo {
+            border-radius: 50%;
+            overflow: hidden;
+            width: 300px;
+            height: 300px;
+        }
+        div.photo.img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        div.js-fadein{
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(40px);
+            transition: all 1s;
+        }
+        div.js-fadein.is-show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0px);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header"><h1>ようこそ！　中西　龍　のサイトへ！
+    </h1>
+    <nav><a href="#a">Profile</a>
+        <a href="#b">Career</a>
+        <a href="#c">Comment</a>
+    </nav></div>
+    <br>
+    <div class="photo">
+        <img src="IMG/image2.jpeg"
+        width="300px"
+        >
+    </div>
+    <ul>
+        <li id="a">プロフィール</li>
+        <br>
+        <div class="element js-fadein">・名前：中西　龍<br>
+            ・職業：SES（システムエンジニアリングサービス<br>
+            ・生年月日：1998年11月18日<br>
+            ・メールアドレス：<br>
+            ryu.nakanishi@force-corp.co.jp<br>
+            ・スキル：特になし<br>
+            ・実績：なし<br><br><br>
+        </div>
+
+            <li id="b">経歴</li>
+            <br>
+            <div class="element js-fadein">2017年4月より専修大学　経済学部　経済学科に入学。<br>
+                2021年3月に卒業。<br>
+                同年４月より、フォース株式会社に入社。<br>
+                新人研修を通じてITスキルを習得中。<br>
+                SQL、UNIX、Gitの基礎を習得。<br>
+                現在は、HTML、CSS、JavaScriptを学習中。<br><br><br>
+            </div>
+
+                <li id="c">ひとこと</li>
+                <br>
+                <div class="element js-fadein">まだIT知識には疎く、エンジニアリングとしては慣れていませんが、いち早くプロフェッショナルになれるよう、コツコツと努力を積み重ねたいと考えています。<br>
+                    10年後には、自作のゲームが作れるようになるまで腕を磨きたいです。<br>
+                </div>
+                    <br /><br /><br /><br /><br /><br /><br /><br />
+                    <script src="js/jikkoPRkadai.js"></script>
+    </ul>
+</body>
+</html>
